@@ -11,7 +11,7 @@ class Photo{
         return [];
     }
 
-    public function addPhoto($photoName)  {
+    public function addPhoto($photoName): void  {
         $photos = $this->getPhotos();
         $photos[] = $photoName;
         file_put_contents($this->photoFile, json_encode($photos));

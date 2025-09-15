@@ -6,4 +6,4 @@ return [
     'db_name' => 'portifolio',
     'db_user' => 'root',
     'db_pass' => ''
-];
+]; 
