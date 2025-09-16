@@ -4,7 +4,7 @@ class Router{
     //Precisa verificar se existe uma rota, ou endereço inicial (Home)
   public function run(){ 
     //Monta a URL 'http://localhost/projetos/Portifolio_mvc/public/' + '?controller=produtos'
-    $controller = isset($_GET['controller']) ?? 'home';
+    $controller = isset($_GET['controller']) ? $_GET['controller']  : 'home';
     //Padronização para o input do usuário
     $controller = ucfirst(strtoupper($controller)) . 'Controller';
     //Indicar a URL do destino
